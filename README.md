@@ -100,3 +100,61 @@ font-size: 11px;
 line-height: 1.36; // 15px
 letter-spacing: 0.2em;
 }
+
+<!--  -->
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+margin: 0;
+}
+
+img {
+display: block;
+max-width: 100%;
+height: auto;
+}
+
+button {
+cursor: pointer;
+border: none;
+}
+
+ul,
+ol {
+list-style: none;
+
+margin: 0;
+
+padding-left: 0;
+}
+
+a {
+text-decoration: none;
+}
+
+.container {
+по макету
+}
+
+.section {
+по макету
+}
+
+.visually-hidden {
+position: absolute;
+white-space: nowrap;
+width: 1px;
+height: 1px;
+overflow: hidden;
+border: 0;
+padding: 0;
+clip: rect(0 0 0 0);
+clip-path: inset(50%);
+margin: -1px;
+
+}

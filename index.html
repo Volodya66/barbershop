@@ -5,30 +5,117 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
-    <!--  -->
+    <!--Header  -->
 
-    <header>
-      <nav>
-        <a href="./barbershop.html"></a>
-        <ul>
-          <li><a href="#"></a>Про нас</li>
-          <li><a href="#"></a>Послуги та ціни</li>
-          <li><a href="#"></a>Майстри</li>
-          <li><a href="#"></a>Контакти</li>
-        </ul>
-      </nav>
-      <address>
-        <ul>
-          <li><a href=""></a></li>
-          <li><button type="button">онлайн-запис</button></li>
-        </ul>
-      </address>
+    <header class="wrapper-header">
+      <div class="container header-container">
+        <nav class="nav-header">
+          <a href="./index.html" class="logo">
+            <svg width="68" height="56" class="logo-header">
+              <use href="./image/sprite.svg#logo_barbershop"></use>
+            </svg>
+          </a>
+          <ul class="navigations-link">
+            <li class="list-links-nav"><a href="#"></a>Про нас</li>
+            <li class="list-links-nav"><a href="#"></a>Послуги та ціни</li>
+            <li class="list-links-nav"><a href="#"></a>Майстри</li>
+            <li class="list-links-nav"><a href="#"></a>Контакти</li>
+          </ul>
+        </nav>
+        <address class="addres">
+          <ul class="addres-list">
+            <li><a href="tel:+380441111111">+38 044 111 11 11</a></li>
+            <li><button type="button">онлайн-запис</button></li>
+          </ul>
+        </address>
+      </div>
     </header>
 
-    <!--  -->
+    <!--  hero-->
+    <section>
+      <div class="container container-hero">
+        <div class="wrapper-hero-link">
+          <ul class="list-sochial-list">
+            <li>
+              <a lang="en" href="#" class="social-link">Instagram</a>
+            </li>
+            <li><a lang="en" href="#" class="social-link">Youtube</a></li>
+          </ul>
+        </div>
+        <div class="wrapper-content-hero">
+          <p lang="en" class="text-salon">A hair salon for men in Kyiv</p>
+          <h1 lang="en" class="hero-title">BarberShop</h1>
+          <p class="expert-text">
+            Ми експерти у модних чоловічих стрижках. Працюємо швидко, обережно
+            та зі смаком.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- serction 2 -->
+
+    <section>
+      <div class="container">
+        <ul>
+          <li><img src="" alt="" /></li>
+          <li><img src="" alt="" /></li>
+        </ul>
+        <div>
+          <p>ПРО НАС</p>
+          <h2>Найкращий Барбершоп твого міста</h2>
+          <p>
+            Якщо ти хочеш додати у свій образ більше впевненості, тобі точно до
+            нас.
+          </p>
+          <p>
+            Ми команда, яка ніколи не зупиняється на досягнутому і прагне змін.
+            І коли ти потрапиш до рук нашого майстра, то вже ніколи не зможеш
+            бути тим самим. Ми команда, яка завжди з клієнтами "на одній хвилі".
+            Тому ми завжди готові вдосконалити кожного, хто до нас приходить!
+          </p>
+          <button>онлайн-запис</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 3 -->
+    <section>
+      <div class="container">
+        <p>Проведи час у компанії кращих майстрів</p>
+        <h2>Послуги та ціни</h2>
+        <div>
+          <ul>
+            <li>Чоловіча стрижка</li>
+            <li>Стрижка бороди</li>
+            <li>Стрижка вусів</li>
+            <li>Гоління небезпечною бритвою</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>Стрижка у стажера</li>
+            <li>Стрижка під насадку</li>
+            <li>Дитяча стрижка (до 12 років)</li>
+            <li>Камуфлювання сивини</li>
+          </ul>
+        </div>
+        <button>онлайн-запис</button>
+      </div>
+    </section>
   </body>
 </html>
