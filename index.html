@@ -29,17 +29,39 @@
               <use href="./image/sprite.svg#logo_barbershop"></use>
             </svg>
           </a>
+
           <ul class="navigations-link">
-            <li class="list-links-nav"><a href="#"></a>Про нас</li>
-            <li class="list-links-nav"><a href="#"></a>Послуги та ціни</li>
-            <li class="list-links-nav"><a href="#"></a>Майстри</li>
-            <li class="list-links-nav"><a href="#"></a>Контакти</li>
+            <li class="list-links-nav">
+              <a class="link-header" href="#">Про нас</a>
+            </li>
+            <li class="list-links-nav">
+              <a class="link-header" href="#">Послуги та ціни</a>
+            </li>
+            <li class="list-links-nav">
+              <a class="link-header" href="#">Майстри</a>
+            </li>
+            <li class="list-links-nav">
+              <a class="link-header" href="#">Контакти</a>
+            </li>
           </ul>
         </nav>
+        <button class="burger-menu" type="button">
+          <svg width="24" height="16">
+            <use href="./image/sprite.svg#burger"></use>
+          </svg>
+        </button>
         <address class="addres">
           <ul class="addres-list">
-            <li><a href="tel:+380441111111">+38 044 111 11 11</a></li>
-            <li><button type="button">онлайн-запис</button></li>
+            <li>
+              <a class="link-header number" href="tel:+380441111111"
+                >+38 044 111 11 11</a
+              >
+            </li>
+            <li>
+              <button class="button-text button-section" type="button">
+                онлайн-запис
+              </button>
+            </li>
           </ul>
         </address>
       </div>
@@ -57,9 +79,11 @@
           </ul>
         </div>
         <div class="wrapper-content-hero">
-          <p lang="en" class="text-salon">A hair salon for men in Kyiv</p>
+          <p lang="en" class="line section-text-info section-info line-rgba">
+            A hair salon for men in Kyiv
+          </p>
           <h1 lang="en" class="hero-title">BarberShop</h1>
-          <p class="expert-text">
+          <p class="middle-text expert-text">
             Ми експерти у модних чоловічих стрижках. Працюємо швидко, обережно
             та зі смаком.
           </p>
@@ -69,52 +93,74 @@
 
     <!-- serction 2 -->
 
-    <section>
-      <div class="container">
-        <ul>
-          <li><img src="" alt="" /></li>
-          <li><img src="" alt="" /></li>
+    <section class="section">
+      <div class="container best-barbershop">
+        <ul class="list-photo">
+          <li class="list-photo-card">
+            <img
+              src="./image/1x_desktop/section2_1desktop.jpg"
+              alt="робота з бородою"
+              width="270px"
+              height="445px"
+              class="foto-section2"
+            />
+          </li>
+          <li class="list-photo-card">
+            <img
+              src="./image/1x_desktop/section2_2desktop.jpg"
+              alt="робота опаскою"
+              width="270px"
+              height="445px"
+              class="foto-section2"
+            />
+          </li>
         </ul>
-        <div>
-          <p>ПРО НАС</p>
-          <h2>Найкращий Барбершоп твого міста</h2>
-          <p>
+        <div class="section2_text">
+          <p class="line section-info info-style line-dark-color">ПРО НАС</p>
+          <h2 class="section-title title-section2">
+            Найкращий Барбершоп твого міста
+          </h2>
+          <p class="middle-text come-heare">
             Якщо ти хочеш додати у свій образ більше впевненості, тобі точно до
             нас.
           </p>
-          <p>
+          <p class="small-text text-section-2">
+            <span class="repetitive-text">
+              Якщо ти хочеш додати у свій образ більше впевненості - тобі точно
+              до нас.
+            </span>
             Ми команда, яка ніколи не зупиняється на досягнутому і прагне змін.
             І коли ти потрапиш до рук нашого майстра, то вже ніколи не зможеш
             бути тим самим. Ми команда, яка завжди з клієнтами "на одній хвилі".
             Тому ми завжди готові вдосконалити кожного, хто до нас приходить!
           </p>
-          <button>онлайн-запис</button>
+          <button class="button-text button-section">онлайн-запис</button>
         </div>
       </div>
     </section>
 
     <!-- section 3 -->
-    <section>
+    <section class="section">
       <div class="container">
-        <p>Проведи час у компанії кращих майстрів</p>
-        <h2>Послуги та ціни</h2>
-        <div>
-          <ul>
-            <li>Чоловіча стрижка</li>
-            <li>Стрижка бороди</li>
-            <li>Стрижка вусів</li>
-            <li>Гоління небезпечною бритвою</li>
+        <p class="line section-info line-rgba info-section3">
+          Проведи час у компанії кращих майстрів
+        </p>
+        <h2 class="section-title title-section3">Послуги та ціни</h2>
+        <div class="services-div">
+          <ul class="list-services">
+            <li class="services-text">Чоловіча стрижка</li>
+            <li class="services-text">Стрижка бороди</li>
+            <li class="services-text">Стрижка вусів</li>
+            <li class="services-text">Гоління небезпечною бритвою</li>
+          </ul>
+          <ul class="list-services">
+            <li class="services-text">Стрижка у стажера</li>
+            <li class="services-text">Стрижка під насадку</li>
+            <li class="services-text">Дитяча стрижка (до 12 років)</li>
+            <li class="services-text">Камуфлювання сивини</li>
           </ul>
         </div>
-        <div>
-          <ul>
-            <li>Стрижка у стажера</li>
-            <li>Стрижка під насадку</li>
-            <li>Дитяча стрижка (до 12 років)</li>
-            <li>Камуфлювання сивини</li>
-          </ul>
-        </div>
-        <button>онлайн-запис</button>
+        <button class="button-text button-section">онлайн-запис</button>
       </div>
     </section>
   </body>
