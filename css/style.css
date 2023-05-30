@@ -113,7 +113,6 @@ body {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
   color: var(--title-dark-theme);
 }
 /* текст кнопки */
@@ -146,6 +145,7 @@ body {
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0.02em;
+  color: var(--text-dark-theme);
 }
 /*  */
 .middle-text {
@@ -236,6 +236,10 @@ body {
   display: flex;
 }
 
+.button-header {
+  color: var(--title-dark-theme);
+}
+
 /* hero */
 
 .container-hero {
@@ -299,6 +303,10 @@ body {
 .link-social {
   color: var(--title-light-theme);
 }
+
+.text-section-2 {
+  color: var(--text-light-theme);
+}
 .section2_text {
   width: 536px;
 }
@@ -326,6 +334,41 @@ body {
   margin-bottom: 44px;
 }
 
+.services-div {
+  margin-bottom: 50px;
+}
+/* section3 */
+.button-serviese {
+  color: var(--title-dark-theme);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.table_1,
+.table_2 {
+  margin: 0;
+  border: none;
+  width: 100%;
+}
+
+.name-serviese {
+  display: flex;
+  align-items: baseline;
+}
+
+.name-serviese::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  margin-left: 6px;
+  margin-right: 6px;
+  background-color: rgba(157, 164, 189, 0.12);
+}
+
+.name-serviese-prise:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 @media screen and (max-width: 767px) {
   .section {
     padding-top: 84px;
@@ -333,7 +376,7 @@ body {
   }
 
   .container {
-    width: 480px;
+    max-width: 480px;
     padding-right: 31px;
     padding-left: 31px;
   }
@@ -402,7 +445,7 @@ body {
 
   .wrapper-content-hero {
     padding-top: 208px;
-    padding-right: 112px;
+    /* padding-right: 112px; */
     padding-bottom: 183px;
   }
 
@@ -424,7 +467,7 @@ body {
     gap: 20px;
   }
 
-  .container-hero {
+  .hero-mobile {
     background-image: linear-gradient(
         rgba(25, 28, 38, 0.2),
         rgba(25, 28, 38, 0.2)
@@ -446,6 +489,15 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+  }
+  /* sec3 */
+
+  .services-div {
+    background-image: linear-gradient(
+      rgba(23, 26, 36, 1),
+      rgba(23, 26, 36, 0.2)
+    );
+    padding: 30px;
   }
 }
 
@@ -476,16 +528,20 @@ body {
   .list-sochial-list {
     column-gap: 40px;
     padding: 0;
-    margin-bottom: 40px;
   }
 
   .list-sochial-list::before {
     content: "";
-    background-color: #ff6c00;
+    background-color: var(--title-light-theme);
     width: 1px;
     height: 60px;
+    margin-right: 40px;
     transform: rotate(-90deg);
   }
+  /* .services-div {
+    padding-right: 40px;
+    padding-left: 40px;
+  } */
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -565,6 +621,46 @@ body {
   .text-section-2 {
     margin-bottom: 40px;
   }
+
+  .list-photo {
+    margin-right: 30px;
+  }
+  /* sec3 */
+
+  .foto-section2 {
+    width: 330px;
+    height: 235px;
+  }
+
+  .come-heare,
+  .text-section-2,
+  .title-section2,
+  .section2_text {
+    width: 330px;
+  }
+
+  .section_services {
+    background-image: linear-gradient(
+        rgba(17, 19, 25, 0.8),
+        rgba(17, 19, 25, 0.8)
+      ),
+      url(../image/section3bg_tablet.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    /* background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+  }
+
+  .services-div {
+    background-image: linear-gradient(
+      rgba(23, 26, 36, 1),
+      rgba(23, 26, 36, 0.2)
+    );
+    padding: 30px 40px;
+  }
 }
 
 @media screen and (min-width: 1199px) {
@@ -618,6 +714,7 @@ body {
     padding-left: 100px;
     width: 500px;
     padding-right: 470px;
+    background-image: url(../image/hero-bg.jpg);
   }
 
   /*  section2 */
@@ -632,5 +729,38 @@ body {
 
   .text-section-2 {
     margin-bottom: 42px;
+  }
+
+  /* sec3 */
+
+  .section_services {
+    background-image: linear-gradient(
+        rgba(23, 26, 36, 0.8),
+        rgba(23, 26, 36, 0.8)
+      ),
+      url(../image/section3_bgdeck.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .services-div {
+    display: flex;
+  }
+
+  .table_1,
+  .table_2 {
+    padding: 30px 40px;
+  }
+
+  .table_1 {
+    background-image: linear-gradient(
+      rgba(23, 26, 36, 1),
+      rgba(23, 26, 36, 0.2)
+    );
+  }
+
+  .table_2 {
+    background-image: linear-gradient(rgba(9, 11, 19, 1), rgba(9, 11, 19, 0.2));
   }
 }
