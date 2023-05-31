@@ -75,167 +75,706 @@
     </header>
 
     <!--  hero-->
-    <section class="hero-mobile">
-      <div class="container container-hero">
-        <div class="wrapper-hero-link">
-          <ul class="list-sochial-list">
-            <li>
-              <a lang="en" href="#" class="social-link link-social"
-                >Instagram</a
-              >
+    <main>
+      <section class="hero-mobile">
+        <div class="container container-hero">
+          <div class="wrapper-hero-link">
+            <ul class="list-sochial-list">
+              <li>
+                <a lang="en" href="#" class="social-link link-social"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a lang="en" href="#" class="social-link link-social"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="wrapper-content-hero">
+            <p lang="en" class="line section-text-info section-info line-rgba">
+              A hair salon for men in Kyiv
+            </p>
+            <h1 lang="en" class="hero-title">BarberShop</h1>
+            <p class="middle-text expert-text">
+              Ми експерти у модних чоловічих стрижках. Працюємо швидко, обережно
+              та зі смаком.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- serction 2 -->
+
+      <section id="section1" class="section">
+        <div class="container best-barbershop">
+          <ul class="list-photo">
+            <li class="list-photo-card">
+              <picture>
+                <source
+                  srcset="
+                    ./image/1x_tablet/about_photo1_tablet.jpg    1x,
+                    ./image/2x_tablet/about_photo1_tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./image/1x_desktop/about_photo1_desktop.jpg    1x,
+                    ./image/2x_desktop/about_photo1_desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./image/1x_desktop/section2_1desktop.jpg"
+                  alt="робота з бородою"
+                  width="270px"
+                  height="445px"
+                  class="foto-section2"
+                />
+              </picture>
             </li>
-            <li>
-              <a lang="en" href="#" class="social-link link-social">Youtube</a>
+            <li class="list-photo-card">
+              <picture>
+                <source
+                  srcset="
+                    ./image/1x_tablet/about_photo2_tablet.jpg    1x,
+                    ./image/2x_tablet/about_photo2_tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./image/1x_desktop/about_photo2_desktop.jpg    1x,
+                    ./image/2x_desktop/about_photo2_desktop@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <img
+                  src="./image/1x_desktop/section2_2desktop.jpg"
+                  alt="робота опаскою"
+                  width="270px"
+                  height="445px"
+                  class="foto-section2"
+                />
+              </picture>
+            </li>
+          </ul>
+          <div class="section2_text">
+            <p class="line section-info info-style line-dark-color">ПРО НАС</p>
+            <h2 class="section-title title-section2">
+              Найкращий Барбершоп твого міста
+            </h2>
+            <p class="middle-text come-heare">
+              Якщо ти хочеш додати у свій образ більше впевненості, тобі точно
+              до нас.
+            </p>
+            <p class="small-text text-section-2">
+              <span class="repetitive-text">
+                Якщо ти хочеш додати у свій образ більше впевненості - тобі
+                точно до нас.
+              </span>
+              Ми команда, яка ніколи не зупиняється на досягнутому і прагне
+              змін. І коли ти потрапиш до рук нашого майстра, то вже ніколи не
+              зможеш бути тим самим. Ми команда, яка завжди з клієнтами "на
+              одній хвилі". Тому ми завжди готові вдосконалити кожного, хто до
+              нас приходить!
+            </p>
+            <button class="button-text button-section">онлайн-запис</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- section 3 -->
+      <section id="section2" class="section section_services">
+        <div class="container">
+          <p class="line section-info line-rgba info-section3">
+            Проведи час у компанії кращих майстрів
+          </p>
+          <h2 class="section-title title-section3">Послуги та ціни</h2>
+          <div class="services-div">
+            <table class="table_1 services-text">
+              <tbody class="flex-table flex-table_1">
+                <tr class="name-serviese-prise">
+                  <td class="name-serviese">Чоловіча стрижка</td>
+                  <td class="prise">від 300 грн.</td>
+                </tr>
+                <tr class="name-serviese-prise">
+                  <td class="name-serviese">Стрижка бороди</td>
+                  <td class="prise">від 200 грн.</td>
+                </tr>
+                <tr class="name-serviese-prise">
+                  <td class="name-serviese">Стрижка вусів</td>
+                  <td class="prise">від 200 грн.</td>
+                </tr>
+                <tr class="name-serviese-prise">
+                  <td class="name-serviese">Гоління небезпечною бритвою</td>
+                  <td class="prise">від 200 грн.</td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="table_2 services-text">
+              <tbody class="flex-table">
+                <tr class="name-serviese-prise">
+                  <td class="name-serviese">Стрижка у стажера</td>
+                  <td class="prise">від 50 грн.</td>
+                </tr>
+                <tr class="name-serviese-prise">
+                  <td class="name-serviese">Стрижка під насадку</td>
+                  <td class="prise">від 200 грн.</td>
+                </tr>
+                <tr class="name-serviese-prise">
+                  <td class="name-serviese">Дитяча стрижка (до 12 років)</td>
+                  <td class="prise">від 300 грн.</td>
+                </tr>
+                <tr class="name-serviese-prise">
+                  <td class="name-serviese">Камуфлювання сивини</td>
+                  <td class="prise">від 200 грн.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <button class="button-text button-section button-serviese">
+            онлайн-запис
+          </button>
+        </div>
+      </section>
+      <section class="why-coming">
+        <div class="container why-coming-container">
+          <div class="why-coming-mini-container">
+            <p class="section-info info-why-coming line line-dark-color">
+              стара традиційна школа
+            </p>
+            <h2 class="section-title title-why-coming">
+              Чому приходять саме до нас?
+            </h2>
+            <p class="middle-text middle-why-coming">
+              Про нас говорять лише добре. Але краще 1 раз побачити і відчути,
+              ніж 10 разів прочитати.
+            </p>
+          </div>
+          <ul class="list why-coming-list">
+            <li class="why-coming-list-item">
+              <p class="title-numbers number-ach">
+                600<span class="numbers-plus">+</span>
+              </p>
+              <p class="why-coming-text text-ach">
+                Задоволених клієнтів на день
+              </p>
+            </li>
+
+            <li class="why-coming-list-item">
+              <p class="title-numbers number-ach">
+                50<span class="numbers-plus">+</span>
+              </p>
+              <p class="why-coming-text text-ach">
+                Нагород за відмінний сервіс
+              </p>
+            </li>
+
+            <li class="why-coming-list-item">
+              <p class="title-numbers number-ach">
+                20<span class="numbers-plus">+</span>
+              </p>
+              <p class="why-coming-text text-ach">Найкращих майстрів Києва</p>
+            </li>
+
+            <li class="why-coming-list-item">
+              <p class="title-numbers number-ach">
+                100<span class="numbers-plus">+</span>
+              </p>
+              <p class="why-coming-text text-ach">
+                Подарунків постійним клієнтам
+              </p>
             </li>
           </ul>
         </div>
-        <div class="wrapper-content-hero">
-          <p lang="en" class="line section-text-info section-info line-rgba">
-            A hair salon for men in Kyiv
+      </section>
+
+      <section class="our-masters" id="our-masters">
+        <div class="container our-masters-container">
+          <p class="section-info our-masters-info line line-dark-color">
+            для справжніх шанувальників атмосфери
           </p>
-          <h1 lang="en" class="hero-title">BarberShop</h1>
-          <p class="middle-text expert-text">
-            Ми експерти у модних чоловічих стрижках. Працюємо швидко, обережно
-            та зі смаком.
+          <h2 class="section-title our-masters-title">Наші майстри</h2>
+          <ul class="list workers-list" lang="en">
+            <li class="workers-list-item">
+              <picture>
+                <source
+                  srcset="
+                    ./image/desktop-masters-x1/johnsmith.jpg  1x,
+                    ./image/desktop-masters-x2/johnsmithx.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./image/tablet-masters-x1/johnsmith.jpg  1x,
+                    ./image/tablet-masters-x2/johnsmithx.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./image/mobile-masters-x1/johnsmith.jpg  1x,
+                    ./image/mobile-masters-x2/johnsmithx.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+
+                <img
+                  src="./image/desktop-masters-x1/johnsmith.jpg"
+                  alt="John Smith"
+                  width="370"
+                  height="346"
+                  class="photo-master"
+                />
+              </picture>
+              <div class="masters-info-container">
+                <h3 class="name-workers">John Smith</h3>
+                <p class="job-workers">Extreme Barber</p>
+                <ul class="list social-list">
+                  <li class="social-list-item">
+                    <a href="" class="link social-link" target="_blank">
+                      <svg class="social-icon" width="20" height="20">
+                        <use href="./image/sprite.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="social-list-item">
+                    <a href="" class="link social-link" target="_blank">
+                      <svg class="social-icon" width="20" height="20">
+                        <use href="./image/sprite.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="social-list-item">
+                    <a href="" class="link social-link" target="_blank">
+                      <svg class="social-icon" width="20" height="20">
+                        <use href="./image/sprite.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="social-list-item">
+                    <a href="" class="link social-link" target="_blank">
+                      <svg class="social-icon" width="20" height="20">
+                        <use href="./image/sprite.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="workers-list-item">
+              <picture>
+                <source
+                  srcset="
+                    ./image/desktop-masters-x1/micheledoe.jpg  1x,
+                    ./image/desktop-masters-x2/micheledoex.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./image/tablet-masters-x1/micheledoe.jpg  1x,
+                    ./image/tablet-masters-x2/micheledoex.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./image/mobile-masters-x1/micheledoe.jpg  1x,
+                    ./image/mobile-masters-x2/micheledoex.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+
+                <img
+                  src="./image/desktop-masters-x1/micheledoe.jpg"
+                  alt="Michele Doe"
+                  width="370"
+                  height="346"
+                  class="photo-master"
+                />
+              </picture>
+
+              <div class="masters-info-container">
+                <h3 class="name-workers">Michele Doe</h3>
+                <p class="job-workers">Extreme Barber</p>
+                <ul class="list social-list">
+                  <li class="social-list-item">
+                    <a href="" class="link social-link" target="_blank">
+                      <svg class="social-icon" width="20" height="20">
+                        <use href="./image/sprite.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="social-list-item">
+                    <a href="" class="link social-link" target="_blank">
+                      <svg class="social-icon" width="20" height="20">
+                        <use href="./image/sprite.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="social-list-item">
+                    <a href="" class="link social-link" target="_blank">
+                      <svg class="social-icon" width="20" height="20">
+                        <use href="./image/sprite.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="social-list-item">
+                    <a href="" class="link social-link" target="_blank">
+                      <svg class="social-icon" width="20" height="20">
+                        <use href="./image/sprite.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="workers-list-item">
+              <picture>
+                <source
+                  srcset="
+                    ./image/desktop-masters-x1/alanblack.jpg  1x,
+                    ./image/desktop-masters-x2/alanblackx.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./image/tablet-masters-x1/alanblack.jpg  1x,
+                    ./image/tablet-masters-x2/alanblackx.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./image/mobile-masters-x1/alanblack.jpg  1x,
+                    ./image/mobile-masters-x2/alanblackx.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+
+                <img
+                  src="./image/desktop-masters-x1/alanblack.jpg"
+                  alt="Michele Doe"
+                  width="370"
+                  height="346"
+                  class="photo-master"
+                />
+              </picture>
+              <div class="masters-info-container">
+                <h3 class="name-workers">Alan Black</h3>
+                <p class="job-workers">Extreme Barber</p>
+                <ul class="list social-list">
+                  <li class="social-list-item">
+                    <a href="" class="link social-link" target="_blank">
+                      <svg class="social-icon" width="20" height="20">
+                        <use href="./image/sprite.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="social-list-item">
+                    <a href="" class="link social-link" target="_blank">
+                      <svg class="social-icon" width="20" height="20">
+                        <use href="./image/sprite.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="social-list-item">
+                    <a href="" class="link social-link" target="_blank">
+                      <svg class="social-icon" width="20" height="20">
+                        <use href="./image/sprite.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="social-list-item">
+                    <a href="" class="link social-link" target="_blank">
+                      <svg class="social-icon" width="20" height="20">
+                        <use href="./image/sprite.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="galery">
+        <div class="container">
+          <h2 hidden>Работы</h2>
+          <p class="galery-info line line-dark-color">
+            Латинською мовою "барба" означає "борода"
           </p>
+          <ul class="list galery-list">
+            <li class="galery-list-item">
+              <picture>
+                <source
+                  srcset="
+                    ./image/desktop-galery-x1/one.jpg  1x,
+                    ./image/desktop-galery-x2/onex.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./image/tablet-galery-x1/one.jpg  1x,
+                    ./image/tablet-galery-x2/onex.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./image/mobile-galery-x1/one.jpg  1x,
+                    ./image/mobile-galery-x2/onex.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+
+                <img
+                  src="./image/desktop-galery-x1/one.jpg"
+                  alt="Example"
+                  width="370"
+                  height="360"
+                  class="photo-galery"
+                />
+              </picture>
+            </li>
+
+            <li class="galery-list-item">
+              <picture>
+                <source
+                  srcset="
+                    ./image/desktop-galery-x1/two.jpg  1x,
+                    ./image/desktop-galery-x2/twox.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./image/tablet-galery-x1/two.jpg  1x,
+                    ./image/tablet-galery-x2/twox.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./image/mobile-galery-x1/two.jpg  1x,
+                    ./image/mobile-galery-x2/twox.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+
+                <img
+                  src="./image/desktop-galery-x1/two.jpg"
+                  alt="Example"
+                  width="370"
+                  height="360"
+                  class="photo-galery"
+                />
+              </picture>
+            </li>
+
+            <li class="galery-list-item">
+              <picture>
+                <source
+                  srcset="
+                    ./image/desktop-galery-x1/three.jpg  1x,
+                    ./image/desktop-galery-x2/threex.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./image/tablet-galery-x1/three.jpg  1x,
+                    ./image/tablet-galery-x2/threex.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./image/mobile-galery-x1/three.jpg  1x,
+                    ./image/mobile-galery-x2/threex.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+
+                <img
+                  src="./image/desktop-galery-x1/three.jpg"
+                  alt="Example"
+                  width="370"
+                  height="360"
+                  class="photo-galery"
+                />
+              </picture>
+            </li>
+
+            <li class="galery-list-item">
+              <picture>
+                <source
+                  srcset="
+                    ./image/desktop-galery-x1/four.jpg  1x,
+                    ./image/desktop-galery-x2/fourx.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./image/tablet-galery-x1/four.jpg  1x,
+                    ./image/tablet-galery-x2/fourx.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./image/mobile-galery-x1/four.jpg  1x,
+                    ./image/mobile-galery-x2/fourx.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+
+                <img
+                  src="./image/desktop-galery-x1/four.jpg"
+                  alt="Example"
+                  width="370"
+                  height="360"
+                  class="photo-galery"
+                />
+              </picture>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="contacts">
+        <div class="container online-contacts-container">
+          <section class="online-container">
+            <p class="section-title online-title">Онлайн-запис</p>
+            <form class="online-form">
+              <input
+                class="online-input form-style"
+                type="text"
+                name="user_name"
+                placeholder="Ім'я*"
+                required
+              />
+              <input
+                class="online-input form-style"
+                type="tel"
+                name="user_phone"
+                placeholder="Телефон*"
+                required
+              />
+              <textarea
+                class="online-textarea form-style"
+                type="text"
+                name="message"
+                placeholder="повідомлення"
+              ></textarea>
+              <button class="button-text online-button" type="submit">
+                Надіслати
+              </button>
+            </form>
+          </section>
+
+          <section class="contacts-container" id="contacts-container">
+            <p class="section-title contacts-title">Контакти</p>
+            <div class="contacts-mini-container">
+              <ul class="list contacts-list mini-container-item">
+                <li class="contacts-list-item">
+                  <a
+                    href="https://goo.gl/maps/dm7uhxpx3GkHBbAA8?coh=178571&entry=tt"
+                    class="link contacts-link middle-text"
+                    target="_blank"
+                  >
+                    <svg width="24" height="24" class="contacts-icon">
+                      <use href="./image/sprite.svg#geo"></use>
+                    </svg>
+                    вул. Василькова, 7А Київ, 08132</a
+                  >
+                </li>
+
+                <li class="contacts-list-item">
+                  <a
+                    href="tel:380441111111"
+                    class="link contacts-link middle-text"
+                  >
+                    <svg width="24" height="24" class="contacts-icon">
+                      <use href="./image/sprite.svg#phone"></use>
+                    </svg>
+                    +38 044 111 11 11</a
+                  >
+                </li>
+
+                <li class="contacts-list-item">
+                  <a
+                    href="mailto:barbershop@email.com"
+                    class="contacts-link middle-text"
+                    lang="en"
+                  >
+                    <svg width="24" height="24" class="contacts-icon">
+                      <use href="./image/sprite.svg#mail"></use>
+                    </svg>
+                    barbershop@email.com</a
+                  >
+                </li>
+              </ul>
+
+              <div class="work-time mini-container-item">
+                <p class="section-info time-info-title line">час роботи</p>
+                <p class="mobile-text time-info">Щоденно з 9:00 до 22:00</p>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
-    </section>
+    </main>
 
-    <!-- serction 2 -->
-
-    <section id="section1" class="section">
-      <div class="container best-barbershop">
-        <ul class="list-photo">
-          <li class="list-photo-card">
-            <picture>
-              <source
-                srcset="
-                  ./image/1x_tablet/about_photo1_tablet.jpg    1x,
-                  ./image/2x_tablet/about_photo1_tablet@2x.jpg 2x
-                "
-                media="(min-width: 768px) and (max-width: 1199px)"
-              />
-              <source
-                srcset="
-                  ./image/1x_desktop/about_photo1_desktop.jpg    1x,
-                  ./image/2x_desktop/about_photo1_desktop@2x.jpg 2x
-                "
-                media="(min-width: 1200px)"
-              />
-              <img
-                src="./image/1x_desktop/section2_1desktop.jpg"
-                alt="робота з бородою"
-                width="270px"
-                height="445px"
-                class="foto-section2"
-              />
-            </picture>
+    <footer class="footer">
+      <div class="container footer-container">
+        <ul class="list media-list line line-dark-color" lang="en">
+          <li>
+            <a href="" class="link-text link media-link" target="_blank"
+              >Instagram</a
+            >
           </li>
-          <li class="list-photo-card">
-            <picture>
-              <source
-                srcset="
-                  ./image/1x_tablet/about_photo2_tablet.jpg    1x,
-                  ./image/2x_tablet/about_photo2_tablet@2x.jpg 2x
-                "
-                media="(min-width: 768px) and (max-width: 1199px)"
-              />
-              <source
-                srcset="
-                  ./image/1x_desktop/about_photo2_desktop.jpg    1x,
-                  ./image/2x_desktop/about_photo2_desktop@2x.jpg 2x
-                "
-                media="(min-width:1200px)"
-              />
-              <img
-                src="./image/1x_desktop/section2_2desktop.jpg"
-                alt="робота опаскою"
-                width="270px"
-                height="445px"
-                class="foto-section2"
-              />
-            </picture>
+          <li>
+            <a href="" class="link-text link media-link" target="_blank"
+              >Youtube</a
+            >
           </li>
         </ul>
-        <div class="section2_text">
-          <p class="line section-info info-style line-dark-color">ПРО НАС</p>
-          <h2 class="section-title title-section2">
-            Найкращий Барбершоп твого міста
-          </h2>
-          <p class="middle-text come-heare">
-            Якщо ти хочеш додати у свій образ більше впевненості, тобі точно до
-            нас.
-          </p>
-          <p class="small-text text-section-2">
-            <span class="repetitive-text">
-              Якщо ти хочеш додати у свій образ більше впевненості - тобі точно
-              до нас.
-            </span>
-            Ми команда, яка ніколи не зупиняється на досягнутому і прагне змін.
-            І коли ти потрапиш до рук нашого майстра, то вже ніколи не зможеш
-            бути тим самим. Ми команда, яка завжди з клієнтами "на одній хвилі".
-            Тому ми завжди готові вдосконалити кожного, хто до нас приходить!
-          </p>
-          <button class="button-text button-section">онлайн-запис</button>
-        </div>
+        <p class="link-text copyright" lang="en">Copyright 2020</p>
       </div>
-    </section>
-
-    <!-- section 3 -->
-    <section id="section2" class="section section_services">
-      <div class="container">
-        <p class="line section-info line-rgba info-section3">
-          Проведи час у компанії кращих майстрів
-        </p>
-        <h2 class="section-title title-section3">Послуги та ціни</h2>
-        <div class="services-div">
-          <table class="table_1 services-text">
-            <tbody class="flex-table flex-table_1">
-              <tr class="name-serviese-prise">
-                <td class="name-serviese">Чоловіча стрижка</td>
-                <td class="prise">від 300 грн.</td>
-              </tr>
-              <tr class="name-serviese-prise">
-                <td class="name-serviese">Стрижка бороди</td>
-                <td class="prise">від 200 грн.</td>
-              </tr>
-              <tr class="name-serviese-prise">
-                <td class="name-serviese">Стрижка вусів</td>
-                <td class="prise">від 200 грн.</td>
-              </tr>
-              <tr class="name-serviese-prise">
-                <td class="name-serviese">Гоління небезпечною бритвою</td>
-                <td class="prise">від 200 грн.</td>
-              </tr>
-            </tbody>
-          </table>
-          <table class="table_2 services-text">
-            <tbody class="flex-table">
-              <tr class="name-serviese-prise">
-                <td class="name-serviese">Стрижка у стажера</td>
-                <td class="prise">від 50 грн.</td>
-              </tr>
-              <tr class="name-serviese-prise">
-                <td class="name-serviese">Стрижка під насадку</td>
-                <td class="prise">від 200 грн.</td>
-              </tr>
-              <tr class="name-serviese-prise">
-                <td class="name-serviese">Дитяча стрижка (до 12 років)</td>
-                <td class="prise">від 300 грн.</td>
-              </tr>
-              <tr class="name-serviese-prise">
-                <td class="name-serviese">Камуфлювання сивини</td>
-                <td class="prise">від 200 грн.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <button class="button-text button-section button-serviese">
-          онлайн-запис
-        </button>
-      </div>
-    </section>
+    </footer>
 
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu close-menu-btn">
@@ -243,6 +782,7 @@
           <use href="./image/sprite.svg#icon-close"></use>
         </svg>
       </button>
+
       <nav>
         <ul class="list mobile-nav-list">
           <li><a href="" class="mobile-nav-link link">Про нас</a></li>
