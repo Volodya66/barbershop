@@ -32,20 +32,22 @@
 
           <ul class="navigations-link">
             <li class="list-links-nav">
-              <a class="link-header" href="#">Про нас</a>
+              <a class="link-header sections-hover" href="#section1">Про нас</a>
             </li>
             <li class="list-links-nav">
-              <a class="link-header" href="#">Послуги та ціни</a>
+              <a class="link-header sections-hover" href="#section2"
+                >Послуги та ціни</a
+              >
             </li>
             <li class="list-links-nav">
-              <a class="link-header" href="#">Майстри</a>
+              <a class="link-header sections-hover" href="#section3">Майстри</a>
             </li>
             <li class="list-links-nav">
-              <a class="link-header" href="#">Контакти</a>
+              <a class="link-header sections-hover" href="#">Контакти</a>
             </li>
           </ul>
         </nav>
-        <button class="burger-menu" type="button">
+        <button class="burger-menu js-open-menu" type="button">
           <svg width="24" height="16">
             <use href="./image/sprite.svg#burger"></use>
           </svg>
@@ -53,7 +55,9 @@
         <address class="addres">
           <ul class="addres-list">
             <li>
-              <a class="link-header number" href="tel:+380441111111"
+              <a
+                class="link-header number sections-hover"
+                href="tel:+380441111111"
                 >+38 044 111 11 11</a
               >
             </li>
@@ -100,26 +104,58 @@
 
     <!-- serction 2 -->
 
-    <section class="section">
+    <section id="section1" class="section">
       <div class="container best-barbershop">
         <ul class="list-photo">
           <li class="list-photo-card">
-            <img
-              src="./image/1x_desktop/section2_1desktop.jpg"
-              alt="робота з бородою"
-              width="270px"
-              height="445px"
-              class="foto-section2"
-            />
+            <picture>
+              <source
+                srcset="
+                  ./image/1x_tablet/about_photo1_tablet.jpg    1x,
+                  ./image/2x_tablet/about_photo1_tablet@2x.jpg 2x
+                "
+                media="(min-width: 768px) and (max-width: 1199px)"
+              />
+              <source
+                srcset="
+                  ./image/1x_desktop/about_photo1_desktop.jpg    1x,
+                  ./image/2x_desktop/about_photo1_desktop@2x.jpg 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <img
+                src="./image/1x_desktop/section2_1desktop.jpg"
+                alt="робота з бородою"
+                width="270px"
+                height="445px"
+                class="foto-section2"
+              />
+            </picture>
           </li>
           <li class="list-photo-card">
-            <img
-              src="./image/1x_desktop/section2_2desktop.jpg"
-              alt="робота опаскою"
-              width="270px"
-              height="445px"
-              class="foto-section2"
-            />
+            <picture>
+              <source
+                srcset="
+                  ./image/1x_tablet/about_photo2_tablet.jpg    1x,
+                  ./image/2x_tablet/about_photo2_tablet@2x.jpg 2x
+                "
+                media="(min-width: 768px) and (max-width: 1199px)"
+              />
+              <source
+                srcset="
+                  ./image/1x_desktop/about_photo2_desktop.jpg    1x,
+                  ./image/2x_desktop/about_photo2_desktop@2x.jpg 2x
+                "
+                media="(min-width:1200px)"
+              />
+              <img
+                src="./image/1x_desktop/section2_2desktop.jpg"
+                alt="робота опаскою"
+                width="270px"
+                height="445px"
+                class="foto-section2"
+              />
+            </picture>
           </li>
         </ul>
         <div class="section2_text">
@@ -147,7 +183,7 @@
     </section>
 
     <!-- section 3 -->
-    <section class="section section_services">
+    <section id="section2" class="section section_services">
       <div class="container">
         <p class="line section-info line-rgba info-section3">
           Проведи час у компанії кращих майстрів
@@ -155,40 +191,44 @@
         <h2 class="section-title title-section3">Послуги та ціни</h2>
         <div class="services-div">
           <table class="table_1 services-text">
-            <tr class="name-serviese-prise">
-              <td class="name-serviese">Чоловіча стрижка</td>
-              <td class="prise">від 300 грн.</td>
-            </tr>
-            <tr class="name-serviese-prise">
-              <td class="name-serviese">Стрижка бороди</td>
-              <td class="prise">від 200 грн.</td>
-            </tr>
-            <tr class="name-serviese-prise">
-              <td class="name-serviese">Стрижка вусів</td>
-              <td class="prise">від 200 грн.</td>
-            </tr>
-            <tr class="name-serviese-prise">
-              <td class="name-serviese">Гоління небезпечною бритвою</td>
-              <td class="prise">від 200 грн.</td>
-            </tr>
+            <tbody class="flex-table flex-table_1">
+              <tr class="name-serviese-prise">
+                <td class="name-serviese">Чоловіча стрижка</td>
+                <td class="prise">від 300 грн.</td>
+              </tr>
+              <tr class="name-serviese-prise">
+                <td class="name-serviese">Стрижка бороди</td>
+                <td class="prise">від 200 грн.</td>
+              </tr>
+              <tr class="name-serviese-prise">
+                <td class="name-serviese">Стрижка вусів</td>
+                <td class="prise">від 200 грн.</td>
+              </tr>
+              <tr class="name-serviese-prise">
+                <td class="name-serviese">Гоління небезпечною бритвою</td>
+                <td class="prise">від 200 грн.</td>
+              </tr>
+            </tbody>
           </table>
           <table class="table_2 services-text">
-            <tr class="name-serviese-prise">
-              <td class="name-serviese">Стрижка у стажера</td>
-              <td class="prise">від 50 грн.</td>
-            </tr>
-            <tr class="name-serviese-prise">
-              <td class="name-serviese">Стрижка під насадку</td>
-              <td class="prise">від 200 грн.</td>
-            </tr>
-            <tr class="name-serviese-prise">
-              <td class="name-serviese">Дитяча стрижка (до 12 років)</td>
-              <td class="prise">від 300 грн.</td>
-            </tr>
-            <tr class="name-serviese-prise">
-              <td class="name-serviese">Камуфлювання сивини</td>
-              <td class="prise">від 200 грн.</td>
-            </tr>
+            <tbody class="flex-table">
+              <tr class="name-serviese-prise">
+                <td class="name-serviese">Стрижка у стажера</td>
+                <td class="prise">від 50 грн.</td>
+              </tr>
+              <tr class="name-serviese-prise">
+                <td class="name-serviese">Стрижка під насадку</td>
+                <td class="prise">від 200 грн.</td>
+              </tr>
+              <tr class="name-serviese-prise">
+                <td class="name-serviese">Дитяча стрижка (до 12 років)</td>
+                <td class="prise">від 300 грн.</td>
+              </tr>
+              <tr class="name-serviese-prise">
+                <td class="name-serviese">Камуфлювання сивини</td>
+                <td class="prise">від 200 грн.</td>
+              </tr>
+            </tbody>
           </table>
         </div>
         <button class="button-text button-section button-serviese">
@@ -196,5 +236,48 @@
         </button>
       </div>
     </section>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu close-menu-btn">
+        <svg class="close-icon" width="18" height="18">
+          <use href="./image/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+      <nav>
+        <ul class="list mobile-nav-list">
+          <li><a href="" class="mobile-nav-link link">Про нас</a></li>
+          <li><a href="" class="mobile-nav-link link">Послуги та ціни</a></li>
+          <li>
+            <a href="#our-masters" class="mobile-nav-link link">Майстри</a>
+          </li>
+          <li>
+            <a href="#contacts-container" class="mobile-nav-link link"
+              >Контакти</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <a href="tel:380441111111" class="mobile-nav-link mobile-tel link"
+        >+38 044 111 11 11</a
+      >
+      <button class="mobile-button button-text">онлайн-запис</button>
+      <div class="mobile-media-container">
+        <ul class="list mobile-media-list">
+          <li>
+            <a href="" class="link mobile-media-link" target="_blank"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a href="" class="link mobile-media-link" target="_blank"
+              >Youtube</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

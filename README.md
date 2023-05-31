@@ -158,3 +158,67 @@ clip-path: inset(50%);
 margin: -1px;
 
 }
+
+.contacts {
+background-color: #191C26;
+}
+/_Задний фон Контактов_/
+/_Mobile contacts image_/
+@media screen and (max-device-pixel-ratio: 1) and (max-width: 767px),
+screen and (max-resolution: 96dpi) and (max-width: 767px),
+screen and (max-resolution: 1dppx) and (max-width: 767px) {
+.contacts {
+background-image: linear-gradient(rgba(25, 28, 38, 0.9), rgba(25, 28, 38, 0.9)),
+url(../images/mobile-bg-contacts.jpg);
+}
+}
+/_ Screen 2px - before 768px _/
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+.contacts {
+background-image: linear-gradient(rgba(25, 28, 38, 0.9),
+rgba(25, 28, 38, 0.9)),
+url('../images/mobile-bg-contacts-2x.jpg');
+}
+}
+/_ Tablet contacts image _/
+@media screen and (max-divice-pixel-ratio: 1) and (min-width: 768px) and (max-width: 1199px),
+screen and (max-resolution: 96dpi) and (min-width: 768px) and (max-width: 1199px),
+screen and (max-resolution: 1dppx) and (min-width: 768px) and (max-width: 1199px) {
+.contacts {
+background-image: linear-gradient(rgba(25, 28, 38, 0.9),
+rgba(25, 28, 38, 0.9)),
+url('../images/tablet-bg-contacts.jpg');
+}
+}
+/_ Tablet contacts image 2px _/
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px),
+screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px){
+.contacts {
+background-image: linear-gradient(rgba(25, 28, 38, 0.9),
+rgba(25, 28, 38, 0.9)),
+url('../images/tablet-bg-contacts-2x.jpg');
+}
+}
+/_ Desktop contacts image _/
+@media screen and (max-device-pixel-ratio: 1) and (min-width: 1158px),
+screen and (max-resolution: 96dpi) and (min-width: 1158px),
+screen and (max-resolution: 1dppx) and (min-width: 1158px) {
+.contacts {
+background-image: linear-gradient(rgba(25, 28, 38, 0.9),
+rgba(25, 28, 38, 0.9)),
+url('../images/desktop-bg-contacts.jpg');
+}
+}
+/_ Desktop contacts image 2px _/
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
+screen and (min-resolution: 192dpi) and (min-width: 1158px),
+screen and (min-resolution: 2dppx) and (min-width: 1158px) {
+.contacts {
+background-image: linear-gradient(rgba(25, 28, 38, 0.9),
+rgba(25, 28, 38, 0.9)),
+url('../images/desktop-bg-contacts-2x.jpg');
+}
+}
